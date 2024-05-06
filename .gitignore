@@ -33,3 +33,4 @@
 
 # VS Code
 .vscode/tasks.json
+.vscode/settings.json

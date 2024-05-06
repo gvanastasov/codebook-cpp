@@ -10,3 +10,32 @@
 5. check the compiler via `g++ --version`
 
 > NOTE: most AV softoware might block the executables, so configure local system path exceptions at your own will (and risk...)
+
+## compiler configuration - vscode
+1. disable extensions via `-pedantic-errors` added to your build task's args (above ${file})
+2. set your workspace `Files:Insert Final Newline` setting to true (as new line is pedantically required by c++)
+3. increase warning level by adding more args (above ${file})
+
+```json
+...
+    "args": [
+        ...
+        "-Wall",
+        "-Weffc++",
+        "-Wextra",
+        "-Wconversion",
+        "-Wsign-conversion",
+        // or if you preffer to threat warnings as errors:
+        "-Werror",
+        
+        "${file}",
+        ...
+    ],
+...
+```
+
+> NOTE: the build task is automatically generated once you Run your first project and VSCode asks you how to build that (select g++ from the options)
+
+## code examples
+
+1. [Hello World](./src/001-hellow-world/main.cpp)

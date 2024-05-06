@@ -39,3 +39,4 @@
 ## code examples
 
 1. [Hello World](./src/001-hellow-world/main.cpp)
+2. [Variables](./src/002-variables/main.cpp)

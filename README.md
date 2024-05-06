@@ -42,6 +42,7 @@
 2. [Variables](./src/002-variables/main.cpp)
 3. [I/O Streams Lib](./src/003-iostream/main.cpp)
 4. [Operators](./src/004-operators/main.cpp)
+5. [Expressions](./src/005-expressions/main.cpp)
 
 ## credits
 

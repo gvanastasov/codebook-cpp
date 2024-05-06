@@ -43,6 +43,7 @@
 3. [I/O Streams Lib](./src/003-iostream/main.cpp)
 4. [Operators](./src/004-operators/main.cpp)
 5. [Expressions](./src/005-expressions/main.cpp)
+6. [Functions](./src/006-functions/main.cpp)
 
 ## credits
 

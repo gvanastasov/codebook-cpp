@@ -41,6 +41,7 @@
 1. [Hello World](./src/001-hellow-world/main.cpp)
 2. [Variables](./src/002-variables/main.cpp)
 3. [I/O Streams Lib](./src/003-iostream/main.cpp)
+4. [Operators](./src/004-operators/main.cpp)
 
 ## credits
 

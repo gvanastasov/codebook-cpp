@@ -11,6 +11,8 @@
 */
 int main()
 {
+	// a statement to print 'Hello, world!' to the console
+	// ends with a semicolon ';' to indicate the end of the statement
 	// 'std' is a namespace, 'cout' is an object of class 'ostream' in the 'std' namespace
 	// cout stands for 'character output' and is used to print to the console
 	std::cout << "Hello, world!";

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 // forward declarations
 void sign();
@@ -73,6 +74,7 @@ int main() {
 
     sign();
     overflow();
+    integers();
 
     return 0;
 }
@@ -121,4 +123,29 @@ void overflow()
     // the value wraps around to 0
     unsigned short usi = USHRT_MAX + 1;
     std::cout << usi << std::endl;
+}
+
+void integers() 
+{
+    // fixed sizes
+    // size of int8_t is 1 byte, or 8 bits
+    // theres also int16_t, int32_t, int64_t (and unsigned versions)
+    // the fixed size types are used when you need a fixed size
+    int8_t fixedSizeInt = 10;
+    std::cout << "int8_t: " << sizeof(fixedSizeInt) * 8 << "bits\n";
+
+    // variable sizes
+    // only the minimum size is guaranteed
+    // theres also int_least8_t, int_least16_t, int_least32_t, int_least64_t (and unsigned versions)
+    // as well as int_fast8_t, int_fast16_t, int_fast32_t, int_fast64_t (and unsigned versions)
+    // the variable size types are used when you need a variable size but want to optimize for speed
+    // the difference between least and fast is that least guarantees the minimum size
+    int variableSizeInt = 10;
+    std::cout << "int: " << sizeof(variableSizeInt) * 8 << "bits\n";
+
+    int_least8_t variableLeastSizeInt = 10;
+    std::cout << "int_least8_t: " << sizeof(variableLeastSizeInt) * 8 << "bits\n";
+
+    int_fast8_t variableFastSizeInt = 10;
+    std::cout << "int_fast8_t: " << sizeof(variableFastSizeInt) * 8 << "bits\n";
 }

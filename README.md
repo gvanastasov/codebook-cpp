@@ -45,6 +45,7 @@
 5. [Expressions](./src/005-expressions/main.cpp)
 6. [Functions](./src/006-functions/main.cpp)
 7. [Multi File Solution](./src/007-multi-files/main.cpp)
+8. [Namespaces](./src/008-namespaces/main.cpp)
 
 ## credits
 

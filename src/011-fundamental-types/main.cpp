@@ -1,5 +1,9 @@
 #include <iostream>
 
+// forward declarations
+void sign();
+void overflow();
+
 // every variable has a type
 // data is stored as binary (0s or 1s) in memory
 // the type of the variable determines the size of the memory allocated
@@ -67,6 +71,9 @@ int main() {
     bool b = true;
     std::cout << b << std::endl;
 
+    sign();
+    overflow();
+
     return 0;
 }
 
@@ -78,9 +85,9 @@ void doSomething()
     return;
 }
 
+// signed and unsigned are qualifiers that can be used with some types
 void sign() 
 {
-    // signed and unsigned are qualifiers that can be used with integral types
     // signed means the variable can store both positive and negative values
     // unsigned means the variable can store only positive values
     // by default, integral types are signed
@@ -90,12 +97,28 @@ void sign()
     // size of unsigned short int is 2 bytes, or 16 bits
     // range is 0 to 65535 = 2^16 - 1 = 65535
     // the one bit (subtracted) is used to store the sign
-    unsigned int ui = 10;
+    unsigned short ui = 10;
     std::cout << ui << std::endl;
 
     // size of signed short int is 2 bytes, or 16 bits
     // range is -32768 to 32767 = -2^15 to 2^15 - 1 = -32768 to 32767
     // the one bit (subtracted) is used to store the sign
-    signed int si = -10;
+    signed short si = -10;
     std::cout << si << std::endl;
+}
+
+void overflow()
+{
+    // overflow occurs when the value of a variable exceeds the range of values
+    // that can be stored in the variable
+    // the value wraps around to the other end of the range
+    // this is because the memory allocated to the variable is fixed
+    // and the variable cannot store values beyond the range
+    // this can lead to unexpected results
+    // the program may crash or produce incorrect results
+
+    // the range is 0 to 65535, but the value is 65536
+    // the value wraps around to 0
+    unsigned short usi = USHRT_MAX + 1;
+    std::cout << usi << std::endl;
 }

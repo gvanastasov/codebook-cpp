@@ -53,4 +53,4 @@
 
 ## credits
 
-[www.learncpp.com](https://www.learncpp.com/) for amazing compilation of details around the above topcis.
+[www.learncpp.com](https://www.learncpp.com/) for amazing compilation of details around the above topics.

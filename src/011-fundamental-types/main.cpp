@@ -4,6 +4,8 @@
 // forward declarations
 void sign();
 void overflow();
+void integers();
+void floats();
 
 // every variable has a type
 // data is stored as binary (0s or 1s) in memory
@@ -75,6 +77,7 @@ int main() {
     sign();
     overflow();
     integers();
+    floats();
 
     return 0;
 }
@@ -148,4 +151,24 @@ void integers()
 
     int_fast8_t variableFastSizeInt = 10;
     std::cout << "int_fast8_t: " << sizeof(variableFastSizeInt) * 8 << "bits\n";
+}
+
+void floats()
+{
+    // holds both whole and fractional numbers
+    // size of float is (min) 4 bytes, or 32 bits
+    // size is variable (same for double and long double)
+    // can be denoted via 'f' or 'F' at the end
+    float f = 10.2345;
+    std::cout << "float: " << sizeof(f) * 8 << "bits\n";
+
+    std::cout << 9.87654321f << std::endl;
+    std::cout << 987654.321f << std::endl;
+
+    // scientific notation is used to represent very large or very small numbers
+    // the 'e' or 'E' is used to denote the exponent
+    // the number before 'e' is the mantissa
+    // the number after 'e' is the exponent
+    // below example results in 9.87654321 * 10^6, which will output 9.87654e+06
+    std::cout << "Scientific notation: " << 9876543.21f << std::endl;
 }

@@ -73,12 +73,20 @@ int main() {
     // size of bool can technically be a single bit, but because machines
     // are designed to work with bytes, it is 1 byte - the smallest unit of memory
     bool b = true;
+
+    // ! is the logical NOT operator, which negates the value of the variable
+    // true becomes false, and false becomes true
+    b = !b;
     std::cout << b << std::endl;
 
     sign();
     overflow();
     integers();
     floats();
+
+    std::cout << "Positive Infinity: " << 1.0 / 0.0 << std::endl;
+    std::cout << "Negative Infinity: " << -1.0 / 0.0 << std::endl;
+    std::cout << "Not a Number: " << 0.0 / 0.0 << std::endl;
 
     return 0;
 }

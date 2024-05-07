@@ -1,3 +1,4 @@
+#include <iomanip>
 #include <iostream>
 #include <cstdint>
 
@@ -171,4 +172,16 @@ void floats()
     // the number after 'e' is the exponent
     // below example results in 9.87654321 * 10^6, which will output 9.87654e+06
     std::cout << "Scientific notation: " << 9876543.21f << std::endl;
+    
+    // no suffex, means the type is double
+    std::cout << "Double :" << 9.87654321 << std::endl;
+
+    // this will override the default precision of 6
+    std::cout << std::setprecision(17);
+
+    // because floats can have maximum 6-9 decimal places, everything after that is called
+    // precision loss and is bound to give error results
+    // double has 15-17 decimal places which are more accurate
+    std::cout << "Float (with 17 decimal places): " << 3.33333333333333333333333333333333333333f << std::endl;
+    std::cout << "Double (with 17 decimal places): " << 3.33333333333333333333333333333333333333 << std::endl;
 }

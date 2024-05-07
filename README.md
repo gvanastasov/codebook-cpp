@@ -15,6 +15,7 @@
 1. disable extensions via `-pedantic-errors` added to your build task's args (above ${file})
 2. set your workspace `Files:Insert Final Newline` setting to true (as new line is pedantically required by c++)
 3. increase warning level by adding more args (above ${file})
+4. to debug code via attaching to the process and stepping through use `"stopAtEntry": true,` inside your launch settings
 
 ```json
 ...

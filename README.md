@@ -44,6 +44,7 @@
 4. [Operators](./src/004-operators/main.cpp)
 5. [Expressions](./src/005-expressions/main.cpp)
 6. [Functions](./src/006-functions/main.cpp)
+7. [Multi File Solution](./src/007-multi-files/main.cpp)
 
 ## credits
 

@@ -72,7 +72,30 @@ int main() {
 
 // void is also a fundamental type but cannot be used as a variable type
 // void is used as a return type for functions that do not return a value
-void doSomething() {
+void doSomething() 
+{
     // void
     return;
+}
+
+void sign() 
+{
+    // signed and unsigned are qualifiers that can be used with integral types
+    // signed means the variable can store both positive and negative values
+    // unsigned means the variable can store only positive values
+    // by default, integral types are signed
+    // unsigned can be used to increase the range of positive values
+    // signed can be used to store negative values
+    
+    // size of unsigned short int is 2 bytes, or 16 bits
+    // range is 0 to 65535 = 2^16 - 1 = 65535
+    // the one bit (subtracted) is used to store the sign
+    unsigned int ui = 10;
+    std::cout << ui << std::endl;
+
+    // size of signed short int is 2 bytes, or 16 bits
+    // range is -32768 to 32767 = -2^15 to 2^15 - 1 = -32768 to 32767
+    // the one bit (subtracted) is used to store the sign
+    signed int si = -10;
+    std::cout << si << std::endl;
 }

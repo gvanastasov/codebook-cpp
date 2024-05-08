@@ -39,10 +39,24 @@ int main() {
     // the constant is implicitly converted to a non-constant value, when copied to the function parameter
     doSomething(50);
 
-    // we can also use expression constants
-    // the value of an expression constant is calculated at compile time
-    // the value of an expression constant is determined by the compiler
+    // we can also use constant expression
+    // the value of an constant expression is calculated at compile time
+    // the value of an constant expression is determined by the compiler
     const int z = 10 + 20;
+
+    // constants can be divided into two categories
+    // compile-time constants and run-time constants
+    // compile-time constants are evaluated at compile time
+    // run-time constants are evaluated at run time
+    // constants that are initialized with constant expressions are compile-time constants
+    int a = 10;
+    const int zrt = a;
+    const int zct = 10;
+
+    // we can use the constexpr keyword to define a compile-time constant
+    // the value of a constexpr variable must be known at compile time
+    // the value of a constexpr variable is determined by the compiler
+    constexpr int w = 10 + 20;
 
     return 0;
 }

@@ -1,4 +1,8 @@
 #include <iostream>
+#include <string_view>
+
+void doSomething(std::string s);
+void doSomething(std::string_view s);
 
 // Strings are used to represent text
 int main() {
@@ -49,5 +53,36 @@ int main() {
     std::string name = "John";
     name = "Doe";
 
+    // in the following example, the string object is created
+    // and the string literal is copied to that string object
+    // calling the function doSomething and passing the string object will cause yet another copy
+    // copy operation is costly
+    std::string s1 = "John";
+    doSomething(s1);
+
+    // to avoid this we can use a reference to READ-ONLY string
+    // one way to do that is by using const reference (more on references later)
+    const std::string& s2 = "John";
+
+    // another way is to use string_view
+    // string_view is a non-owning reference to a string
+    // string_view is a lightweight object
+    // string_view is used to pass strings to functions without copying them
+    // the string can only be read, not modified
+    const std::string_view s3{s1};
+    doSomething(s3);
+
+    // changes to original string will reflect in string_view
+    s1 = "Doe";
+    doSomething(s3);
+
     return 0;
+}
+
+void doSomething(std::string s) {
+    std::cout << s << std::endl;
+}
+
+void doSomething(std::string_view s) {
+    std::cout << s << std::endl;
 }

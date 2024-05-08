@@ -1,5 +1,6 @@
 # codebook-cpp
- Just a set of example C++ programms, a learning path from 0 to hero.
+
+Just a set of example C++ programms, a learning path from 0 to hero.
 
 ## env setup - vscode (running on windows machine)
 
@@ -17,7 +18,7 @@
 3. increase warning level by adding more args (above ${file})
 4. to debug code via attaching to the process and stepping through use `"stopAtEntry": true,` inside your launch settings
 
-```json
+```
 ...
     "args": [
         ...
@@ -51,6 +52,8 @@
 10. [Header Files](./src/010-header-files/main.cpp)
 11. [Fundamental Types](./src/011-fundamental-types/main.cpp)
 12. [Conditions](./src/012-conditions/main.cpp)
+
+MORE TO ADD...
 
 ## credits
 

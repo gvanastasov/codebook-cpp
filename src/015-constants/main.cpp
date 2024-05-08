@@ -39,5 +39,10 @@ int main() {
     // the constant is implicitly converted to a non-constant value, when copied to the function parameter
     doSomething(50);
 
+    // we can also use expression constants
+    // the value of an expression constant is calculated at compile time
+    // the value of an expression constant is determined by the compiler
+    const int z = 10 + 20;
+
     return 0;
 }

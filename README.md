@@ -52,6 +52,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 10. [Header Files](./src/010-header-files/main.cpp)
 11. [Fundamental Types](./src/011-fundamental-types/main.cpp)
 12. [Conditions](./src/012-conditions/main.cpp)
+13. [Chars](./src/013-characters/main.cpp)
 
 MORE TO ADD...
 

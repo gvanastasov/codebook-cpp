@@ -57,6 +57,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 15. [Constants](./src/015-constants/main.cpp)
 16. [Literals](./src/016-literals/main.cpp)
 17. [Numerics](./src/017-numerics/main.cpp)
+18. [Strings](./src/018-strings/main.cpp)
 
 MORE TO ADD...
 

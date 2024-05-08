@@ -50,6 +50,7 @@
 9. [Preprocessor](./src/009-preprocessor/main.cpp)
 10. [Header Files](./src/010-header-files/main.cpp)
 11. [Fundamental Types](./src/011-fundamental-types/main.cpp)
+12. [Conditions](./src/012-conditions/main.cpp)
 
 ## credits
 

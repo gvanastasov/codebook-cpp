@@ -18,6 +18,9 @@ void printSomething()
 // unless we declare it upfront, ie 'forward declare' it:
 void printSomethingElse();
 
+// and another forward declaration, read further
+int max(int a, int b);
+
 // Function return statement is required when function return type is not void
 // Functions can return a single value (although there are workarounds - later on this)
 int getTen()
@@ -69,7 +72,21 @@ int main()
     // getTen() will be executed first and then the return value will be passed to printSomething() as an argument
     printSomething(getTen());
 
+    // Inline functions are functions that are expanded in place
+    // Inline functions are used to improve performance
+    // Herein the function call will be replaced by the function body during compilation
+    // Post compilation this will result in:
+    // std::cout << "Max: " << (5 > 10 ? 5 : 10) << std::endl;
+    std::cout << "Max: " << max(5, 10) << std::endl;
+
     return 0;
+}
+
+// Inline function definition
+// inline keyword is used to define an inline function, however it is bad practice to define inline functions manually
+inline int max(int a, int b)
+{
+    return a > b ? a : b;
 }
 
 void printSomethingElse()

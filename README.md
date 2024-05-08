@@ -54,6 +54,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 12. [Conditions](./src/012-conditions/main.cpp)
 13. [Chars](./src/013-characters/main.cpp)
 14. [Casting](./src/014-casting/main.cpp)
+15. [Constants](./src/015-constants/main.cpp)
 
 MORE TO ADD...
 

@@ -93,3 +93,14 @@ void printSomethingElse()
 {
     std::cout << "Something else" << std::endl;
 }
+
+void justAnotherFunction()
+{
+    std::cout << "Just another function" << std::endl;
+}
+
+// Function can be deleted
+// deleted functions cannot be called
+// deleted functions are used to prevent the function from being called
+// its way to manupulate the function chain and overload resolution during runtime
+void justAnotherFunction() = delete;

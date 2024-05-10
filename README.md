@@ -59,6 +59,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 17. [Numerics](./src/017-numerics/main.cpp)
 18. [Strings](./src/018-strings/main.cpp)
 19. [Bitwise Operations](./src/019-bitwise-operations/main.cpp)
+20. [Scope](./src/020-scope/main.cpp)
 
 MORE TO ADD...
 

@@ -38,11 +38,21 @@ int main()
     // variable initialization
     circumference = 2 * pi * radius;
 
+    // we can use aliases for types
+    using MyAlias = int;
+    MyAlias myAlias = 10;
+
+    // we can implicitly deduce the type of a variable
+    // the type of x is int, while the type of y is double
+    auto x = 10;
+    auto y = 10.5;
+
     // print the variables
     std::cout << "I am " << age << " years old." << std::endl;
     std::cout << "It is " << year << " now." << std::endl;
     std::cout << "The area of a circle with radius " << radius << " is " << area << std::endl;
     std::cout << "The circumference of a circle with radius " << radius << " is " << circumference << std::endl;
+    std::cout << "My alias is " << myAlias << std::endl;
 
     // return 0 to indicate successful completion of the program
     return 0;

@@ -41,6 +41,12 @@ void printSomething(int number)
     std::cout << "Something " << number << std::endl;
 }
 
+// Function can have default arguments passed to their parameters
+void printSomethingDefault(int number = 5)
+{
+    std::cout << "Something " << number << std::endl;
+}
+
 // Local function scope is defined by its body
 // both number and multiplier are local variables, which will be 'destroyed' after the function execution
 void printNumberTimesTwo(int number)

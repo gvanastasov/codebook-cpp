@@ -61,6 +61,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 19. [Bitwise Operations](./src/019-bitwise-operations/main.cpp)
 20. [Scope](./src/020-scope/main.cpp)
 21. [Control Flow](./src/021-control-flow/main.cpp)
+22. [Generics](./src/022-generics/main.cpp)
 
 MORE TO ADD...
 

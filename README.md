@@ -62,6 +62,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 20. [Scope](./src/020-scope/main.cpp)
 21. [Control Flow](./src/021-control-flow/main.cpp)
 22. [Generics](./src/022-generics/main.cpp)
+23. [Values](./src/023-values/main.cpp)
 
 MORE TO ADD...
 

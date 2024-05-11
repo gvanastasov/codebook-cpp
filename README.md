@@ -64,6 +64,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 22. [Generics](./src/022-generics/main.cpp)
 23. [Values](./src/023-values/main.cpp)
 24. [Enums](./src/024-enums/main.cpp)
+25. [Structs](./src/025-structs/main.cpp)
 
 MORE TO ADD...
 

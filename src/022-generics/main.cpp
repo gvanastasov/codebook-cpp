@@ -19,6 +19,15 @@ struct Point
     T y;
 };
 
+// we can define multiple types for the struct template
+// the type of the struct is determined at the time of creating a variable of the struct
+template <typename T, typename U>
+struct Kvp
+{
+    T key;
+    U value;
+};
+
 int main()
 {
     // Function template is called with the type specified

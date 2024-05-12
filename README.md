@@ -1,6 +1,6 @@
 # codebook-cpp
 
-Just a set of example C++ programms, a learning path from 0 to hero.
+Just a set of example C++ programms, a fast track learning path from 0 to hero with simple notes and code examples.
 
 ## env setup - vscode (running on windows machine)
 
@@ -65,6 +65,7 @@ Just a set of example C++ programms, a learning path from 0 to hero.
 23. [Values](./src/023-values/main.cpp)
 24. [Enums](./src/024-enums/main.cpp)
 25. [Structs](./src/025-structs/main.cpp)
+26. [Classes](./src/026-classes/main.cpp)
 
 MORE TO ADD...
 
